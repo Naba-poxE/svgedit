@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- No-op until loaded dynamically (could make configurable) -->
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+
+  <!-- STYLESHEETS (others loaded dynamically) -->
+  <style id="styleoverrides" media="screen"></style>
+  <link href="./svgedit.css" rel="stylesheet" media="all">
+  </link>
+
+  <!-- SCRIPTS -->
+
+  <!-- Lacking browser support -->
+  <script type="module" src="./browser-not-supported.js"></script>
+
+  <!-- If you do not wish to add extensions by URL, you can add calls
+      within the following file to svgEditor.setConfig -->
+  <script type="module" src="./index.js"></script>
+
+  <title>SVG-edit</title>
+</head>
+
+<body>
+  <div id="svg_editor" role="main"></div>
+</body>
+
+</html>
